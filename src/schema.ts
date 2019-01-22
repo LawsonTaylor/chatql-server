@@ -1,23 +1,34 @@
-// add user + user queries and mutations
-// add user location, online status, pubsub for online status.
+// add User online / offline mutations
+// add user location, pubsub for online status.
 
 const typeDefs = `
     type Message {
-        id: Int!
-        from: String!
-        message: String!
+        id: String!
+        userId: String!
+        text: String!
     }
 
-    type Query {
+    type User {
+        id: String!
+        name: String!
+        online: Boolean!
         messages: [Message]
     }
 
+    type Query {
+        messages(userId: String!): [Message]
+        users: [User]
+        user(id: String!): User
+    }
+
     type Mutation {
-        sendMessage(from: String!, message: String!): Message
+        sendMessage(userId: String!, text: String!): Message
+        createUser(name: String!): User
     }
 
     type Subscription {
         messageSent: Message
+        userAdded: User
     }
 `;
 
