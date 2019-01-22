@@ -1,0 +1,27 @@
+{
+  "name": "chatql-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "graphql-yoga": "^1.17.0"
+  },
+  "devDependencies": {
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LawsonTaylor/chatql-server.git"
+  },
+  "keywords": [],
+  "author": "Lawson Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LawsonTaylor/chatql-server/issues"
+  },
+  "homepage": "https://github.com/LawsonTaylor/chatql-server#readme"
+}
