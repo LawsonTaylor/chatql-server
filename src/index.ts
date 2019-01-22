@@ -1,7 +1,7 @@
 import { GraphQLServer  } from 'graphql-yoga';
 import pubsub from './pubsub';
-import * as typeDefs from './schema';
-import * as resolvers from './resolver';
+import typeDefs from './schema';
+import  resolvers from './resolver';
 
 
 const server = new GraphQLServer(

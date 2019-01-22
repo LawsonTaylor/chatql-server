@@ -21,4 +21,4 @@ const typeDefs = `
     }
 `;
 
-module.exports = typeDefs;
+export default typeDefs;

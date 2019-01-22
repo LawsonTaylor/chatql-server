@@ -2,7 +2,7 @@
   "name": "chatql-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/index.js",
   "dependencies": {
     "graphql-yoga": "^1.17.0"
   },
@@ -11,7 +11,10 @@
     "typescript": "^3.2.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "serve": "npm run build && node build/index.js",
+    "start": "node build/index.js",
+    "deploy": "npm run build && gcloud app deploy"
   },
   "repository": {
     "type": "git",
